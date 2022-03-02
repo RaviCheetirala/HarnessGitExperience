@@ -33,7 +33,7 @@ pipeline:
                                 name: Rollout Deployment
                                 identifier: rolloutDeployment
                                 type: K8sRollingDeploy
-                                timeout: 10m
+                                timeout: 12m
                                 spec:
                                     skipDryRun: false
                       rollbackSteps:
@@ -41,7 +41,7 @@ pipeline:
                                 name: Rollback Rollout Deployment
                                 identifier: rollbackRolloutDeployment
                                 type: K8sRollingRollback
-                                timeout: 10m
+                                timeout: 12m
                                 spec: {}
               tags: {}
               failureStrategies:
